@@ -20,7 +20,7 @@ h1{
 
 }
 h2{
-    color: rgb(27, 2, 52);
+    color:#39c4e3;
     text-align: left;
     text-decoration: underline;
     font-size:1.75rem;
@@ -161,6 +161,28 @@ pre {
     top: 20px;       /* Keeps it 20px from the top of the browser window */
     height: 95vh;    /* Ensures it spans almost the full height of the screen */
 }
+/* Add this to your style.css */
+.sidebar ul {
+    list-style: none; /* Removes bullets */
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #e1e1e1;
+    display: block;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+}
 .sidebar ul li a.active {
     background-color: #39c4e3;
     color: #1a1a2e;
@@ -174,4 +196,16 @@ pre {
 
 .content-area {
     flex: 1; /* Grows to take up all the remaining space */
+}
+/* This hides the element visually but keeps it available for Screen Readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }

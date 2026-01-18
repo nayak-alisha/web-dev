@@ -8,11 +8,13 @@
 </head>
 
 <body>
-    <header>
+    
+    <header >
         <h1>AI Explorer's Dashboard</h1>
     </header>
-    <div class="dashboard-body">
+    <main class="dashboard-body">
         <aside class="sidebar">
+            <nav>
             <h3>Menu</h3>
             <ul>
                 <li><a class=active href="#">Home</a></li>
@@ -20,8 +22,9 @@
                 <li><a href="#">Settings</a></li>
                 <li><a href="#contact-section">Contact us</a></li>
             </ul>
+            </nav>
         </aside>
-    <main class="main-content">
+    <div class="main-content">
         <figure><img src="ai_html.png" alt="An image related to AI and coding" class="class_main">
             <figcaption>An aesthetic AI pic</figcaption>
         </figure>
@@ -49,7 +52,7 @@
                         Html,Css,js</a></li>
             </ul>
         </section>
-        </div>
+    </div>
         <section>
             <h2>Progress Tracker</h2>
             <table>
@@ -83,22 +86,26 @@
         <section id="contact-section">
             <h2>Contact me</h2>
             <form >
+            <fieldset style="border: none; padding: 0;">
+            <legend class="sr-only">Contact Details</legend>
                 <div class="form-group">
+
                     <label for="user-name">Full Name:</label>
-                    <input type="text" id="user-name" name="name" placeholder="Enter your name" required>
+                    <input type="text" id="user-name" name="name" placeholder="Enter your name" required autocomplete="name">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group"> 
                     <label for="user-email">Email Address:  </label>
-                    <input type="email" id="user-email" name="email" placeholder="email@example.com" required>
+                    <input type="email" id="user-email" name="email" placeholder="email@example.com" required autocomplete="email">
                 </div>
 
                 <button type="submit" class="submit-btn">Submit</button>
+                </fieldset>
             </form>
         </section>
-    </main>
     </div>
-    <footer>
+</main>
+    <footer >
         <p>
             Sincerely,
         </p>
@@ -108,6 +115,7 @@
             <a href="mailto:samuel@gmail.com" class="mail">samuel@gmail.com</a>
         </address>
     </footer>
+  
 </body>
 
 </html>
