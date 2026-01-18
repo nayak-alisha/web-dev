@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     background-color: #1a1a2e; 
     color:#e1e1e1 ;
@@ -13,14 +16,14 @@ h1{
     font-family: Roboto,'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
     text-align: center;
     text-decoration: underline;
-    font-size: 40px;
+    font-size: 2.5rem;
 
 }
 h2{
     color: rgb(27, 2, 52);
     text-align: left;
     text-decoration: underline;
-    font-size:xx-large;
+    font-size:1.75rem;
 }
 a.tag{
     text-decoration: none;
@@ -121,4 +124,54 @@ input{
     border-radius: 10px;
     margin-top: 5px;
 
+}
+.flex-container{
+    display:flex;
+    gap:20px;
+    align-items: flex-start;
+}
+.flex-item{
+    flex: 1;          /* Grow: 1, Shrink: 1, Basis: 0 */
+    min-width: 0;
+}
+/* Also add this to ensure the code text wraps instead of overflowing */
+pre {
+    white-space: pre-wrap;       /* Wraps text to the next line */
+    word-wrap: break-word;       /* Breaks long words if needed */
+    background-color: #1a1a2e;
+    padding: 10px;
+    border-radius: 5px;
+}
+.dashboard-body {
+    display: flex; /* Makes the Sidebar and Main Content sit side-by-side */
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.sidebar {
+    flex: 0 0 250px; /* Do not grow, do not shrink, stay exactly 250px wide */
+    background-color: #16213e;
+    background: rgba(22, 33, 62, 0.8); /* Semi-transparent navy */
+    backdrop-filter: blur(10px);       /* Blurs whatever is behind it */
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 12px;
+    overflow-y: auto;  /* Allows scrolling INSIDE the sidebar if you have many links */
+    position: sticky; 
+    top: 20px;       /* Keeps it 20px from the top of the browser window */
+    height: 95vh;    /* Ensures it spans almost the full height of the screen */
+}
+.sidebar ul li a.active {
+    background-color: #39c4e3;
+    color: #1a1a2e;
+    font-weight: bold;
+    padding: 8px 12px;   /* Gives the highlight some breathing room */
+    border-radius: 6px;  /* Softens the edges of the highlight */
+    display: block;
+    
+}
+
+
+.content-area {
+    flex: 1; /* Grows to take up all the remaining space */
 }
