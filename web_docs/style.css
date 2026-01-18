@@ -1,0 +1,124 @@
+body{
+    background-color: #1a1a2e; 
+    color:#e1e1e1 ;
+}
+section{
+    background-color:#20387b;
+    padding:20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+h1{
+    color: #39c4e3;
+    font-family: Roboto,'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+
+}
+h2{
+    color: rgb(27, 2, 52);
+    text-align: left;
+    text-decoration: underline;
+    font-size:xx-large;
+}
+a.tag{
+    text-decoration: none;
+    background-color: black;
+    color: rgb(244, 235, 235);
+    padding: 5px 12px;
+    margin-bottom: 4px;
+    border-radius: 15px;
+    display: inline-block;
+    font-size: 14px;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;
+}
+a.tag:hover {
+  background-color: #2ecc71; /* Fades to Green over 0.2 seconds */
+}
+a.mail{
+    display: inline-block;
+    font-size: 15px;
+    font-family: sans-serif;
+    transition:all 0.3s ease;
+}
+a.mail:hover{
+    color:#2ecc71;
+}
+img.class_main{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;   
+    object-fit: cover; 
+}
+figcaption{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: large;
+}
+table{
+    width:100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+th {
+    background-color: #0f3460;
+    color: #00d2ff;
+    text-align: left;
+}
+td, th {
+    padding: 12px;
+    border-bottom: 2px solid #1a1a2e;
+   
+}
+form{
+    display: block;
+    text-align: left;
+    padding: 15px;
+}
+div.form-group{
+    padding:15px;
+    text-align: left;
+    font-size: 20px;
+}
+button{
+    border: none;
+    outline: none;
+    cursor:pointer;
+    padding: 12px 28px;
+    margin-top: 20px;
+    margin-left:15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: #6366f1;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+}
+/* Lift effect on hover */
+button:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Click effect (shrink) */
+button:active {
+  transform: scale(0.95);
+}
+input{
+    background-color: #1a1a2e;
+    border: 1px solid #39c4e3;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+
+}
